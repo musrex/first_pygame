@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>player</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/leandro/Documents/platformer/game/player.py">/home/leandro/Documents/platformer/game/player.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="player.html#Player">Player</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="player.html#Enemy">Enemy</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="player.html#Weapon">Weapon</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="player.html#Blaster">Blaster</a>
+</font></dt><dt><font face="helvetica, arial"><a href="player.html#Shotgun">Shotgun</a>
+</font></dt><dt><font face="helvetica, arial"><a href="player.html#Wrench">Wrench</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Blaster">class <strong>Blaster</strong></a>(<a href="player.html#Weapon">Weapon</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Blaster">Blaster</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="player.html#Blaster">Blaster</a></dd>
+<dd><a href="player.html#Weapon">Weapon</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Blaster-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;weapon.<br>
+Fine&nbsp;tune&nbsp;specific&nbsp;weapon&nbsp;attributes&nbsp;in&nbsp;their&nbsp;subclasses</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><a name="Blaster-use"><strong>use</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;weapon&nbsp;on&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;ammo&nbsp;of&nbsp;the&nbsp;weapon<br>
+and&nbsp;reduce&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;target.<br>
+It&nbsp;will&nbsp;also&nbsp;calculate&nbsp;if&nbsp;the&nbsp;weapon&nbsp;hit&nbsp;the&nbsp;target<br>
+based&nbsp;on&nbsp;range,&nbsp;accuracy,&nbsp;and&nbsp;a&nbsp;random&nbsp;number.<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Enemy">class <strong>Enemy</strong></a>(<a href="player.html#Player">Player</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Enemy">Enemy</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="player.html#Enemy">Enemy</a></dd>
+<dd><a href="player.html#Player">Player</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Enemy-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;enemy<br>
+Here&nbsp;we&nbsp;set&nbsp;enemy&nbsp;attributes,<br>
+like&nbsp;health,&nbsp;distance&nbsp;from&nbsp;player,&nbsp;and&nbsp;current&nbsp;weapon</tt></dd></dl>
+
+<dl><dt><a name="Enemy-use_weapon"><strong>use_weapon</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;current&nbsp;weapon<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="player.html#Player">Player</a>:<br>
+<dl><dt><a name="Enemy-equip"><strong>equip</strong></a>(self, weapon) -&gt; None</dt><dd><tt>Equips&nbsp;a&nbsp;weapon&nbsp;to&nbsp;the&nbsp;player<br>
+This&nbsp;will&nbsp;set&nbsp;the&nbsp;current_weapon&nbsp;attribute&nbsp;to&nbsp;the&nbsp;weapon&nbsp;passed&nbsp;in</tt></dd></dl>
+
+<dl><dt><a name="Enemy-heal"><strong>heal</strong></a>(self) -&gt; None</dt><dd><tt>Heals&nbsp;the&nbsp;player<br>
+This&nbsp;will&nbsp;increase&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;player,&nbsp;or&nbsp;enemy&nbsp;subclass.</tt></dd></dl>
+
+<dl><dt><a name="Enemy-move_away"><strong>move_away</strong></a>(self, target) -&gt; None</dt><dd><tt>Moves&nbsp;the&nbsp;player&nbsp;away&nbsp;from&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;increase&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;player&nbsp;and&nbsp;the&nbsp;target<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<dl><dt><a name="Enemy-move_closer"><strong>move_closer</strong></a>(self, target) -&gt; None</dt><dd><tt>Moves&nbsp;the&nbsp;player&nbsp;closer&nbsp;to&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;player&nbsp;and&nbsp;the&nbsp;target<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="player.html#Player">Player</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Player">class <strong>Player</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Player">Player</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Player-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;player<br>
+Here&nbsp;we&nbsp;set&nbsp;player&nbsp;attributes,<br>
+like&nbsp;health,&nbsp;inventory,&nbsp;and&nbsp;current&nbsp;weapon</tt></dd></dl>
+
+<dl><dt><a name="Player-equip"><strong>equip</strong></a>(self, weapon) -&gt; None</dt><dd><tt>Equips&nbsp;a&nbsp;weapon&nbsp;to&nbsp;the&nbsp;player<br>
+This&nbsp;will&nbsp;set&nbsp;the&nbsp;current_weapon&nbsp;attribute&nbsp;to&nbsp;the&nbsp;weapon&nbsp;passed&nbsp;in</tt></dd></dl>
+
+<dl><dt><a name="Player-heal"><strong>heal</strong></a>(self) -&gt; None</dt><dd><tt>Heals&nbsp;the&nbsp;player<br>
+This&nbsp;will&nbsp;increase&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;player,&nbsp;or&nbsp;enemy&nbsp;subclass.</tt></dd></dl>
+
+<dl><dt><a name="Player-move_away"><strong>move_away</strong></a>(self, target) -&gt; None</dt><dd><tt>Moves&nbsp;the&nbsp;player&nbsp;away&nbsp;from&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;increase&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;player&nbsp;and&nbsp;the&nbsp;target<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<dl><dt><a name="Player-move_closer"><strong>move_closer</strong></a>(self, target) -&gt; None</dt><dd><tt>Moves&nbsp;the&nbsp;player&nbsp;closer&nbsp;to&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;player&nbsp;and&nbsp;the&nbsp;target<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<dl><dt><a name="Player-use_weapon"><strong>use_weapon</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;current&nbsp;weapon<br>
+This&nbsp;will&nbsp;call&nbsp;the&nbsp;use&nbsp;method&nbsp;on&nbsp;the&nbsp;current&nbsp;weapon<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Shotgun">class <strong>Shotgun</strong></a>(<a href="player.html#Weapon">Weapon</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Shotgun">Shotgun</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="player.html#Shotgun">Shotgun</a></dd>
+<dd><a href="player.html#Weapon">Weapon</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Shotgun-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;weapon.<br>
+Fine&nbsp;tune&nbsp;specific&nbsp;weapon&nbsp;attributes&nbsp;in&nbsp;their&nbsp;subclasses</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><a name="Shotgun-use"><strong>use</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;weapon&nbsp;on&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;ammo&nbsp;of&nbsp;the&nbsp;weapon<br>
+and&nbsp;reduce&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;target.<br>
+It&nbsp;will&nbsp;also&nbsp;calculate&nbsp;if&nbsp;the&nbsp;weapon&nbsp;hit&nbsp;the&nbsp;target<br>
+based&nbsp;on&nbsp;range,&nbsp;accuracy,&nbsp;and&nbsp;a&nbsp;random&nbsp;number.<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Weapon">class <strong>Weapon</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Weapon">Weapon</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Weapon-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;weapon.<br>
+Fine&nbsp;tune&nbsp;specific&nbsp;weapon&nbsp;attributes&nbsp;in&nbsp;their&nbsp;subclasses</tt></dd></dl>
+
+<dl><dt><a name="Weapon-use"><strong>use</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;weapon&nbsp;on&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;ammo&nbsp;of&nbsp;the&nbsp;weapon<br>
+and&nbsp;reduce&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;target.<br>
+It&nbsp;will&nbsp;also&nbsp;calculate&nbsp;if&nbsp;the&nbsp;weapon&nbsp;hit&nbsp;the&nbsp;target<br>
+based&nbsp;on&nbsp;range,&nbsp;accuracy,&nbsp;and&nbsp;a&nbsp;random&nbsp;number.<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Wrench">class <strong>Wrench</strong></a>(<a href="player.html#Weapon">Weapon</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Wrench">Wrench</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="player.html#Wrench">Wrench</a></dd>
+<dd><a href="player.html#Weapon">Weapon</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Wrench-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><tt>Initializes&nbsp;the&nbsp;weapon.<br>
+Fine&nbsp;tune&nbsp;specific&nbsp;weapon&nbsp;attributes&nbsp;in&nbsp;their&nbsp;subclasses</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><a name="Wrench-use"><strong>use</strong></a>(self, target) -&gt; None</dt><dd><tt>Uses&nbsp;the&nbsp;weapon&nbsp;on&nbsp;the&nbsp;target<br>
+This&nbsp;will&nbsp;reduce&nbsp;the&nbsp;ammo&nbsp;of&nbsp;the&nbsp;weapon<br>
+and&nbsp;reduce&nbsp;the&nbsp;health&nbsp;of&nbsp;the&nbsp;target.<br>
+It&nbsp;will&nbsp;also&nbsp;calculate&nbsp;if&nbsp;the&nbsp;weapon&nbsp;hit&nbsp;the&nbsp;target<br>
+based&nbsp;on&nbsp;range,&nbsp;accuracy,&nbsp;and&nbsp;a&nbsp;random&nbsp;number.<br>
+Parameters:&nbsp;target,&nbsp;can&nbsp;be&nbsp;player&nbsp;or&nbsp;enemy</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="player.html#Weapon">Weapon</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-enemy_turn"><strong>enemy_turn</strong></a>(player, enemy) -&gt; bool</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;run&nbsp;the&nbsp;enemy's&nbsp;turn<br>
+This&nbsp;will&nbsp;check&nbsp;the&nbsp;enemy's&nbsp;health&nbsp;and&nbsp;distance&nbsp;from&nbsp;the&nbsp;player<br>
+and&nbsp;decide&nbsp;what&nbsp;to&nbsp;do&nbsp;based&nbsp;on&nbsp;that.<br>
+Parameters:&nbsp;player,&nbsp;the&nbsp;player&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;enemy,&nbsp;the&nbsp;enemy&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+ <dl><dt><a name="-equip_weapon"><strong>equip_weapon</strong></a>(player) -&gt; None</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;equip&nbsp;a&nbsp;weapon&nbsp;to&nbsp;the&nbsp;player<br>
+This&nbsp;will&nbsp;print&nbsp;out&nbsp;the&nbsp;inventory&nbsp;and&nbsp;ask&nbsp;the&nbsp;player&nbsp;to&nbsp;choose&nbsp;a&nbsp;weapon&nbsp;to&nbsp;equip.<br>
+Parameters:&nbsp;player,&nbsp;the&nbsp;player&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>() -&gt; None</dt></dl>
+ <dl><dt><a name="-range_check"><strong>range_check</strong></a>(weapon, target) -&gt; bool</dt></dl>
+</td></tr></table>
+</body></html>
